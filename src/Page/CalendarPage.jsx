@@ -13,7 +13,7 @@ const CalendarPage = () => {
     const fetchDayList = async () => {
       try {
         const response = await axios.get(
-          `http://43.203.208.221:8079/api/search/${m}`
+          `http://43.203.208.221:8079/api/search`
         );
         setDayList(response.data.body);
         console.log(response);
